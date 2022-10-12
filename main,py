@@ -26,13 +26,13 @@ s = ''' string can span
         multiple line '''
 print(s)
 
-# ------------
+# -------------
 
 str = "Python String"
 print(str[-1])  # g
 print(str[-2])  # n
 
-# ------------
+# -------------
 
 # The str[0:2] returns a substring that includes the character from the index 0 (included) to 2 (excluded).
 # Example: string[start:end] 
@@ -43,7 +43,7 @@ print(str[0:2])
 # Output: 
 # Py
 
-# ------------
+# -------------
 
 # Python strings are immutable*****
 
@@ -56,10 +56,46 @@ str[0] = 'J'
 #     str[0] = 'J'
 # TypeError: 'str' object does not support item assignment</module>
 
-#-------------
+# --------------
 
+count = 10000000000
+# Can also implemented as:
+count = 10_000_000_000
 
+# --------------
 
+# The bool() function
+>>> bool('Hi')
+True
+>>> bool('')
+False
+>>> bool(100)
+True
+>>> bool(0)
+False
+
+# --------------
+
+# Python multiline comments
+def increase(salary, percentage, rating):
+    """ increase salary base on rating and percentage
+    rating 1 - 2 no increase
+    rating 3 - 4 increase 5%
+    rating 4 - 6 increase 10%
+    """
+
+# --------------
+
+#  the input() function returns a string, not an integer.
+
+price = input('Enter the price ($):')
+tax = input('Enter the tax rate (%):')
+
+# To convert a string to a number, you use the int() function. More precisely, the int() function converts a string to an integer.
+net_price = int(price) * int(tax) / 100 
+print(f'The net price is ${net_price}')
+
+#---------------
 # ---------------- IF SATMENTS AND LOGIC CONDITIONS -------------------
 
 # Backslash (\) character to continue a statement in the second line:
