@@ -1,2 +1,2 @@
 # Pythin-Basics
- Notes to remmember python language.
+ This repository is for programmers who switch from another language and struggle with python syntax.
