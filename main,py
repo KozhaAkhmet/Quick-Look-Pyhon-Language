@@ -1,0 +1,80 @@
+# Many of this examples are from https://www.pythontutorial.net/python-basics/python-string/ 
+
+# ----------------------------- SYNTAX AND VARIABLES -----------------------
+
+# Variable names cannot contain spaces. To separate words in variables, you use underscores for example sorted_list.
+
+greeting = 'Good '
+time = 'Afternoon'
+
+greeting = greeting + time + '!'
+print(greeting)
+
+# ------------
+
+str = "Python String"
+print(str[0]) # P
+print(str[1]) # y
+
+# ------------
+
+s = 'This is a string'
+print(s)
+s = "Another string using double quotes"
+print(s)
+s = ''' string can span
+        multiple line '''
+print(s)
+
+# ------------
+
+str = "Python String"
+print(str[-1])  # g
+print(str[-2])  # n
+
+# ------------
+
+# The str[0:2] returns a substring that includes the character from the index 0 (included) to 2 (excluded).
+# Example: string[start:end] 
+
+str = "Python String"
+print(str[0:2]) 
+
+# Output: 
+# Py
+
+# ------------
+
+# Python strings are immutable*****
+
+str = "Python String"
+str[0] = 'J' 
+
+# Ouput:
+# Traceback (most recent call last):
+#   File "app.py", line 2, in <module>
+#     str[0] = 'J'
+# TypeError: 'str' object does not support item assignment</module>
+
+#-------------
+
+
+
+# ---------------- IF SATMENTS AND LOGIC CONDITIONS -------------------
+
+# Backslash (\) character to continue a statement in the second line:
+
+if (a == True) and (b == False) and \
+   (c == True):
+    print("Continuation of statements")
+
+# ---------------- FUNCTIONS ---------------------
+# Declaring function
+def function(state):
+    if(state):
+    # Function code
+
+# Declaring function with return value
+def function_with_return():
+    if(True):
+    # Function code
